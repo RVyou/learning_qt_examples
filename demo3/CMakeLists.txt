@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.30)
-project(demo1)
+project(demo3)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
@@ -14,21 +14,11 @@ find_package(Qt6 COMPONENTS
   Widgets
   REQUIRED)
 
-add_executable(demo1 main.cpp
-        level.cpp
-        level.h
-        fence.cpp
-        fence.h
-        splitter.cpp
-        splitter.h
-        stacked.cpp
-        stacked.h
-        group.cpp
-        group.h
-        layout_switch.cpp
-        layout_switch.h
+add_executable(demo3 main.cpp
+        borderless.cpp
+        borderless.h
 )
-target_link_libraries(demo1
+target_link_libraries(demo3
   Qt::Core
   Qt::Gui
   Qt::Widgets

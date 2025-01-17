@@ -1,8 +1,3 @@
-//
-// Created by aini on 2025/1/13.
-//
-
-// You may need to build the project (run Qt uic code generator) to get "ui_level.h" resolved
 
 #include "level.h"
 #include <QHBoxLayout>
