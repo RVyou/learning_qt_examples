@@ -4,7 +4,6 @@
 #include <QWidget>
 
 #include <QWidget>
-#include <QMouseEvent>
 
 
 class borderless : public QWidget {
@@ -12,12 +11,11 @@ class borderless : public QWidget {
 
 public:
     explicit borderless(QWidget *parent = nullptr);
+
     ~borderless() override;
 
-protected:
-    QPoint movPos;
-    void mousePressEvent(QMouseEvent *event) override;//鼠标单击事件
-    void mouseMoveEvent(QMouseEvent *event) override;//移动事件
+
+
 };
 
 

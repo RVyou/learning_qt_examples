@@ -17,6 +17,8 @@ find_package(Qt6 COMPONENTS
 add_executable(demo3 main.cpp
         borderless.cpp
         borderless.h
+        topmenu.cpp
+        topmenu.h
 )
 target_link_libraries(demo3
   Qt::Core
