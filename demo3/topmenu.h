@@ -28,10 +28,10 @@ signals:
 
 private:
     QPoint movPos;
-
+    bool windowStatus=false;// false 不是最大窗口
     void mousePressEvent(QMouseEvent *event) override; //鼠标单击事件
     void mouseMoveEvent(QMouseEvent *event) override; //移动事件
+    void  mouseDoubleClickEvent(QMouseEvent *event) override; //鼠标双击事件
 };
-
 
 #endif //TOPMENU_H

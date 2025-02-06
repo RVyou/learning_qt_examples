@@ -13,7 +13,7 @@ borderless::borderless(QWidget *parent) : QWidget(parent) {
     this->setContentsMargins(0, 0, 0, 0);
     this->setStyleSheet("background-color:rgb(255, 255, 255)");;
     this->setMinimumSize(800, 600);
-    //垂直波距
+    //垂直布局
     auto *vbox = new QVBoxLayout(this);
     vbox->setContentsMargins(0, 0, 0, 0);
     vbox->setSpacing(0);
