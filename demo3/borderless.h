@@ -1,7 +1,6 @@
 #ifndef BORDERLESS_H
 #define BORDERLESS_H
 
-#include <QWidget>
 
 #include <QWidget>
 
@@ -11,11 +10,11 @@ class borderless : public QWidget {
 
 public:
     explicit borderless(QWidget *parent = nullptr);
-
     ~borderless() override;
 
-
-
+private:
+    int m_nBorderWidth = 10;
+    bool nativeEvent(const QByteArray &eventType, void *message, qintptr *result) override;
 };
 
 
